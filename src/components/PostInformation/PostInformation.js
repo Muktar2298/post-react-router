@@ -18,7 +18,7 @@ const PostInformation = (props) => {
         .then(response => response.json())
         .then(data => setPostInfo(data))
         .catch(error => console.log(error));
-    },[])
+    },[id])
     return (
         <div>
             <h4>This is Post Information</h4>
